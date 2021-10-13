@@ -16,9 +16,9 @@ public class CodeblogServiceImpl implements CodeblogService {
     CodeblogRepository codeblogRepository;
 
 
-    @Override
+    @Override // Como são de uma interface, é necessário implementar seus métodos, Override serve para sobrescreve-los
     public List<Post> findAll() {
-        return codeblogRepository.findAll();
+        return codeblogRepository.findAll(); //Possui todos esses métodos ja prontos ao extender o JPARepository no repositório 
     }
 
     @Override
