@@ -53,7 +53,7 @@
               </nav>
               </nav>
 
-            <div class="card" style="width: 55rem;" th:each="posts : ${posts}">
+            <div class="card" style="width: 55rem; margin-bottom: 20px;" th:each="posts : ${posts}">
                 <div class="card-body">
                   <a th:href="${(#mvc.url('CC#getPostDetails').arg(0, posts.id)).build()}">
                       <h3 class="card-title" style="font-weight: bold; color: black; padding-top: 5px;"><span th:text=${posts.titulo}></span></h5>
